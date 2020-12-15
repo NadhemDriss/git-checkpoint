@@ -1,0 +1,109 @@
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again
+$ git init
+Initialized empty Git repository in C:/Users/ASUS/Desktop/learn_git_again/.git/
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git add third.txt
+fatal: pathspec 'third.txt' did not match any files
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git add third.txt.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git add third.txt.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) 64907a4] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git log
+commit 64907a4b5e9750e3e76db7bf5cc09e634d98c180 (HEAD -> master)
+Author: NadhemDriss <64647030+NadhemDriss@users.noreply.github.com>
+Date:   Tue Dec 15 11:09:41 2020 +0100
+
+    adding third.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git add fourth.txt.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git commit -m "adding fourth.txt"
+[master e851d75] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git rm third.txt.txt
+rm 'third.txt.txt'
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git commit -m "removing third.txt"
+[master b7c026b] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git log
+commit b7c026b4a982e86655e2b56cb4a7d48e69f1c44e (HEAD -> master)
+Author: NadhemDriss <64647030+NadhemDriss@users.noreply.github.com>
+Date:   Tue Dec 15 11:11:50 2020 +0100
+
+    removing third.txt
+
+commit e851d7599c6bdae234dff8d84853473efe816bc9
+Author: NadhemDriss <64647030+NadhemDriss@users.noreply.github.com>
+Date:   Tue Dec 15 11:10:43 2020 +0100
+
+    adding fourth.txt
+
+commit 64907a4b5e9750e3e76db7bf5cc09e634d98c180
+Author: NadhemDriss <64647030+NadhemDriss@users.noreply.github.com>
+Date:   Tue Dec 15 11:09:41 2020 +0100
+
+    adding third.txt
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git config --global core.pager cat
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git config --global user.name
+NadhemDriss
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git config --global user.email
+64647030+NadhemDriss@users.noreply.github.com
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=NadhemDriss
+user.email=64647030+NadhemDriss@users.noreply.github.com
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+ASUS@DESKTOP-IM5JH59 MINGW64 ~/Desktop/learn_git_again (master)
+$ git config--global
+git: 'config--global' is not a git command. See 'git --help'.
